@@ -21,7 +21,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="21" />
 
     <permission android:name="com.cyanogenmod.lockclock.permission.READ_WEATHER" />
 
@@ -42,7 +42,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Main"
+        android:theme="@style/AppTheme"
         android:name=".WidgetApplication" >
 
         <meta-data android:name="com.google.android.gms.version"
