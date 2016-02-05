@@ -19,7 +19,7 @@
     android:versionCode="21"
     android:versionName="3.4.1" >
 
-    <uses-sdk android:minSdkVersion="21" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="23" />
 
     <permission android:name="com.cyanogenmod.lockclock.permission.READ_WEATHER" />
 
@@ -53,6 +53,7 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_SETTINGS" />
                 </intent-filter>
         </activity>
 
