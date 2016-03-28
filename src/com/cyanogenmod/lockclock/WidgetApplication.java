@@ -19,7 +19,6 @@ package com.cyanogenmod.lockclock;
 import com.cyanogenmod.lockclock.misc.Constants;
 import com.cyanogenmod.lockclock.ClockWidgetProvider;
 import com.cyanogenmod.lockclock.ClockWidgetService;
-import com.cyanogenmod.lockclock.misc.Preferences;
 
 import android.app.AlarmManager;
 import android.app.Application;
@@ -98,12 +97,5 @@ public class WidgetApplication extends Application {
         Intent i = new Intent(context, ClockWidgetService.class);
         i.setAction(ClockWidgetService.ACTION_REFRESH);
         return PendingIntent.getService(context, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        Preferences.ensureValidWeatherProvider(this);
     }
 }
